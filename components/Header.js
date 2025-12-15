@@ -186,7 +186,7 @@ const Header = () => {
     };
   }, [activeDropdown]);
   return (
-    <div className=" bg-black">
+    <div className=" bg-black fbjb">
       <header className="bg-black  ">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
