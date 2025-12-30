@@ -1,7 +1,14 @@
 @import "tailwindcss";
-/* 
 
 :root {
+  --font-jakarta: var(--font-jakarta);
+}
+
+.font-jakarta {
+  font-family: var(--font-jakarta), sans-serif;
+}
+
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -25,3 +32,4 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 } */
+
