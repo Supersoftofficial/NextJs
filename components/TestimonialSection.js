@@ -35,7 +35,7 @@ const reviewsData = [
   {
     id: 1,
     name: "Britney Gooch",
-    avatar: "/b.png",
+    avatar: "/B.png",
     type: "google",
     icon: "/g.png",
     rating: "/mms.png",
@@ -44,7 +44,7 @@ const reviewsData = [
   {
     id: 2,
     name: "Britney Gooch",
-    avatar: "/b.png",
+    avatar: "/B.png",
     type: "google",
     icon: "/s.png",
     rating: "/ms.png",
@@ -53,7 +53,7 @@ const reviewsData = [
   {
     id: 3,
     name: "Britney Gooch",
-    avatar: "/b.png",
+    avatar: "/B.png",
     type: "stars",
     icon: "/sss.png",
     rating: "/mms.png",
@@ -62,7 +62,7 @@ const reviewsData = [
   {
     id: 4,
     name: "Britney Gooch",
-    avatar: "/b.png",
+    avatar: "/B.png",
     type: "google",
     icon: "/g.png",
     rating: "/mms.png",
@@ -71,7 +71,7 @@ const reviewsData = [
   {
     id: 5,
     name: "Britney Gooch",
-    avatar: "/b.png",
+    avatar: "/B.png",
     type: "google",
     icon: "/s.png",
     rating: "/ms.png",
@@ -80,7 +80,7 @@ const reviewsData = [
   {
     id: 6,
     name: "Britney Gooch",
-    avatar: "/b.png",
+    avatar: "/B.png",
     type: "stars",
     icon: "/sss.png",
     rating: "/mms.png",

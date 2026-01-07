@@ -498,7 +498,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="min-h-screen gradient-bg py-20 px-4 md:px-6 relative overflow-hidden ">
+    <section className="min-h-screen gradient-bg pb-20 px-4 md:px-6 relative overflow-hidden ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* LEFT CONTENT */}
