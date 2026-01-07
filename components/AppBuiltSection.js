@@ -688,7 +688,7 @@ const features = [
 // Different images for each slide
 const slideImages = [
   "/immg.png",
-  "/immg.png", // Replace with your different images
+  "/immg.png", 
   "/immg.png",
   "/immg.png",
   "/immg.png"
@@ -715,6 +715,7 @@ const phonePositions = [
 const AppBuiltSection = () => {
   const [currentSlide, setCurrentSlide] = useState(2); // Start at center slide
   const [isAnimating, setIsAnimating] = useState(false);
+  const [isHovered, setIsHovered] = useState(false); // NEW
   const totalSlides = 5;
 
   const nextSlide = () => {
@@ -739,13 +740,22 @@ const AppBuiltSection = () => {
   };
 
   // Auto slide functionality
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 2000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     nextSlide();
+  //   }, 2000);
 
-    return () => clearInterval(interval);
-  }, [currentSlide, isAnimating]);
+  //   return () => clearInterval(interval);
+  // }, [currentSlide, isAnimating]);
+
+  useEffect(() => {
+  if (isHovered) return; // pause while hovered
+  const interval = setInterval(() => {
+    nextSlide();
+  }, 3000);
+
+  return () => clearInterval(interval);
+}, [currentSlide, isAnimating, isHovered]);
 
   // Calculate which slide should be in each position
   const getVisibleSlides = () => {
@@ -771,9 +781,9 @@ const AppBuiltSection = () => {
   const visibleSlides = getVisibleSlides();
 
   return (
-    <div className="overflow-x-hidden py-16">
+    <div className="overflow-x-hidden py-6">
       {/* Hero Section - UNCHANGED */}
-      <section className="relative w-full py-10 lg:py-20">
+      <section className="relative w-full ">
         <div className="relative w-full flex flex-col lg:flex-row items-center justify-center gap-4 mt-10 px-4">
           <h2 className="bg-[linear-gradient(0deg,rgba(102,102,102,1)_0%,rgba(255,255,255,1)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] font-semibold text-transparent text-4xl md:text-6xl lg:text-[80px] tracking-[-1.60px] leading-tight text-center lg:text-left">
             Apps Built for
@@ -894,6 +904,10 @@ const AppBuiltSection = () => {
           {/* All 5 phones in a row - only one is fully visible at center */}
           {visibleSlides.map((slide) => (
             <div
+            onMouseEnter={() => setIsHovered(true)}  // PAUSE on hover
+    onMouseLeave={() => setIsHovered(false)} // RESUME on leave
+      onTouchStart={() => setIsHovered(true)}
+    onTouchEnd={() => setIsHovered(false)}
               key={slide.slideIndex}
               className={`absolute ${phonePositions[slide.positionIndex].class} transition-all duration-500 ${
                 slide.isCenter 

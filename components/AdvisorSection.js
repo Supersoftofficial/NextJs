@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const AdvisorSection = () => {
   return (
-    <div className="w-full overflow-hidden py-22">
+    <div className="w-full overflow-hidden py-16">
       <section className="relative flex justify-center gradient-bg py-12 sm:py-16 md:py-20 px-4 sm:px-6">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Background Blur Effect - Responsive */}

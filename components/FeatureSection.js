@@ -126,7 +126,7 @@ const FeatureSection = () => {
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
                 <div className="relative w-[300px] md:w-[400px] lg:w-[539px]">
                   <Image
-                    src="/lap.png"
+                    src="/Laptop.png"
                     alt="Laptop"
                     width={539}
                     height={300}
@@ -180,7 +180,7 @@ const FeatureSection = () => {
               <div className="flex justify-center mb-8 sm:mb-12">
                 <div className="relative w-64 sm:w-80 md:w-96">
                   <Image
-                    src="/lap.png"
+                    src="/Laptop.png"
                     alt="Laptop"
                     width={384}
                     height={214}

@@ -67,6 +67,33 @@ const appTypes = [
 const TechnologySection = () => {
   const scrollContainerRef = useRef(null);
   const animationRef = useRef(null);
+  const appScrollRef = useRef(null);
+  const appAnimRef = useRef(null);
+  const duplicatedAppTypes = [...appTypes, ...appTypes];
+  useEffect(() => {
+    const container = appScrollRef.current;
+    if (!container) return;
+
+    const halfWidth = container.scrollWidth / 2;
+    let position = -halfWidth; // 👈 start from left side
+    const speed = 1;
+
+    const animate = () => {
+      position += speed;
+
+      // jab original position aa jaye, wapis start
+      if (position >= 0) {
+        position = -halfWidth;
+      }
+
+      container.style.transform = `translateX(${position}px)`;
+      appAnimRef.current = requestAnimationFrame(animate);
+    };
+
+    appAnimRef.current = requestAnimationFrame(animate);
+
+    return () => cancelAnimationFrame(appAnimRef.current);
+  }, []);
 
   // Auto-scroll animation
   useEffect(() => {
@@ -140,32 +167,37 @@ const TechnologySection = () => {
         </div>
 
         {/* App Types Section */}
-        <div className="w-full bg-black rounded-b-[20px] py-6 sm:py-8 px-4 sm:px-8 lg:px-16 flex flex-wrap justify-center items-center gap-6 sm:gap-10 lg:gap-16">
-          {appTypes.map((appType, index) => (
-            <div
-              key={index}
-              className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 flex-shrink-0 transition-transform duration-300 hover:scale-105 hover:shadow-lg"
-            >
-              {/* Icon (only if hasIcon=true) */}
-              {appType.hasIcon && (
-                <Image
-                  src="/star.png"
-                  alt="Star"
-                  width={55}
-                  height={55}
-                  className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-[55px] object-contain mb-2 sm:mb-0 sm:mr-3"
-                />
-              )}
-
-              {/* App Name */}
-              <span
-                className="font-[Plus_Jakarta_Sans] font-semibold text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[37px] tracking-tight leading-tight text-center sm:text-left
-              font-semibold text-[37.1px] leading-[44.51px] tracking-[-0.02em] "
+        <div className="w-full overflow-hidden bg-black rounded-b-[20px] py-6 sm:py-8">
+          <div
+            ref={appScrollRef}
+            className="flex items-center gap-10 sm:gap-16 lg:gap-24 w-fit"
+          >
+            {duplicatedAppTypes.map((appType, index) => (
+              <div
+                key={index}
+                className="flex items-center gap-3 sm:gap-4 flex-shrink-0
+        transition-transform duration-300 hover:scale-105"
               >
-                {appType.name}
-              </span>
-            </div>
-          ))}
+                {appType.hasIcon && (
+                  <Image
+                    src="/star.png"
+                    alt="Star"
+                    width={55}
+                    height={55}
+                    className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12"
+                  />
+                )}
+
+                <span
+                  className="font-[Plus_Jakarta_Sans] font-semibold text-white
+          text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[37px]
+          tracking-tight whitespace-nowrap"
+                >
+                  {appType.name}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </div>

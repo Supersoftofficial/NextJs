@@ -40,7 +40,7 @@ const Header = () => {
   }, [activeDropdown]);
   return (
     <div className=" bg-black">
-      <header className="bg-black  ">
+      <header className="bg-black  relative z-[9999] ">
         <div className="container mx-auto px-4 ">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
@@ -74,7 +74,7 @@ const Header = () => {
                       About
                     </a>
                   </li>
-                  <li className="relative" ref={dropdownRef}>
+                  <li className="relative z-50" ref={dropdownRef}>
                     <button
                       onClick={() =>
                         setActiveDropdown(

@@ -85,11 +85,11 @@ const Footer = () => {
           </div>
 
           {/* Right Section */}
-          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-12 lg:pl-12">
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-12 lg:pl-12">
             {/* Navigation */}
-            <nav className="flex flex-col gap-4">
-              <h3 className="font-bold text-white">Navigate</h3>
-              <ul className="font-normal text-white leading-[60px]">
+            <nav className="flex flex-col gap-4 items-center text-center">
+              <h3 className="font-bold text-white">{`Navigate`}</h3>
+              <ul className="font-normal text-white leading-[2.5rem]">
                 {navigationLinks.map((link, index) => (
                   <li
                     key={index}
@@ -102,9 +102,9 @@ const Footer = () => {
             </nav>
 
             {/* Support */}
-            <nav className="flex flex-col gap-4">
-              <h3 className="font-bold text-white">Support Us</h3>
-              <ul className="font-normal text-white leading-[60px]">
+            <nav className="flex flex-col gap-4 items-center text-center">
+              <h3 className="font-bold text-white">{`Support Us`}</h3>
+              <ul className="font-normal text-white leading-[2.5rem]">
                 {supportLinks.map((link, index) => (
                   <li
                     key={index}
@@ -117,9 +117,9 @@ const Footer = () => {
             </nav>
 
             {/* Resources */}
-            <nav className="flex flex-col gap-4">
-              <h3 className="font-bold text-white">Resources</h3>
-              <ul className="font-normal text-white leading-[60px]">
+            <nav className="flex flex-col gap-4 items-center text-center">
+              <h3 className="font-bold text-white">{`Resources`}</h3>
+              <ul className="font-normal text-white leading-[2.5rem]">
                 {resourceLinks.map((link, index) => (
                   <li
                     key={index}
