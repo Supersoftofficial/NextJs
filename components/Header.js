@@ -50,7 +50,7 @@ const Header = () => {
                   alt="Hawk Logo"
                   width={300}
                   height={300}
-                  className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain"
+                  className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-30 object-contain"
                 />
               </div>
             </div>

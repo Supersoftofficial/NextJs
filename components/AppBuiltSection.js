@@ -39,9 +39,6 @@
 //   return (
 //     <div className="overflow-x-hidden py-16">
 
-
-
-
 //       {/* Hero Section */}
 //       <section className="relative w-full py-10 lg:py-20">
 //         <div className="relative w-full flex flex-col lg:flex-row items-center justify-center gap-4 mt-10 px-4">
@@ -58,13 +55,13 @@
 //       <section className="relative w-full py-10 lg:py-20 px-4 lg:px-0">
 //             {/* Left side gradient */}
 // <div
-//   className="absolute -left-52 sm:-left-72 md:-left-96 w-[2186px] h-[968px] rounded-[1093px/484px] blur-[124px] 
+//   className="absolute -left-52 sm:-left-72 md:-left-96 w-[2186px] h-[968px] rounded-[1093px/484px] blur-[124px]
 //              bg-[linear-gradient(212deg,rgba(1,114,202,0.34)_0%,rgba(0,0,0,0.34)_100%)]"
 // />
 
 // {/* Right side gradient */}
 // <div
-//   className="absolute -right-52 sm:-right-72 md:-right-96 w-[2186px] h-[968px] rounded-[1093px/484px] rotate-180 blur-[124px] 
+//   className="absolute -right-52 sm:-right-72 md:-right-96 w-[2186px] h-[968px] rounded-[1093px/484px] rotate-180 blur-[124px]
 //              bg-[linear-gradient(212deg,rgba(1,114,202,0.34)_0%,rgba(0,0,0,0.34)_100%)]"
 // />
 //         {/* Mobile View - Grid Layout */}
@@ -168,7 +165,6 @@
 //         {/* Desktop View - Original Layout */}
 //         <div className="hidden lg:block relative mx-auto max-w-[1273px] h-[869px]">
 //           <div className="absolute top-11 left-[466px] w-[338px] h-[825px] rounded-[29px_29px_48px_48px] bg-[linear-gradient(180deg,#1E88E5_0%,#000000_100%)]" />
-          
 
 //           <article className="absolute top-[206px] left-[calc(50.00%_-_157px)] w-[311px] h-[641px]">
 //             <div className="absolute top-0 left-0 w-[311px] h-[641px] bg-[#3b3c40] rounded-[51.73px] overflow-hidden">
@@ -278,7 +274,7 @@
 // }
 
 // export default AppBuiltSection
-'use client'
+'use client';
 // import React, { useState, useEffect } from 'react'
 // import { Button } from "../components/ui/Button";
 // import Image from 'next/image';
@@ -383,13 +379,13 @@
 //       <section className="relative w-full py-10 lg:py-20 px-4 lg:px-0">
 //         {/* Left side gradient */}
 //         <div
-//           className="absolute -left-52 sm:-left-72 md:-left-96 w-[2186px] h-[968px] rounded-[1093px/484px] blur-[124px] 
+//           className="absolute -left-52 sm:-left-72 md:-left-96 w-[2186px] h-[968px] rounded-[1093px/484px] blur-[124px]
 //                      bg-[linear-gradient(212deg,rgba(1,114,202,0.34)_0%,rgba(0,0,0,0.34)_100%)]"
 //         />
 
 //         {/* Right side gradient */}
 //         <div
-//           className="absolute -right-52 sm:-right-72 md:-right-96 w-[2186px] h-[968px] rounded-[1093px/484px] rotate-180 blur-[124px] 
+//           className="absolute -right-52 sm:-right-72 md:-right-96 w-[2186px] h-[968px] rounded-[1093px/484px] rotate-180 blur-[124px]
 //                      bg-[linear-gradient(212deg,rgba(1,114,202,0.34)_0%,rgba(0,0,0,0.34)_100%)]"
 //         />
 
@@ -442,7 +438,7 @@
 //               >
 //                 <span className="text-white text-lg">‹</span>
 //               </button>
-              
+
 //               <div className="flex space-x-2 items-center">
 //                 {slideImages.map((_, index) => (
 //                   <button
@@ -454,7 +450,7 @@
 //                   />
 //                 ))}
 //               </div>
-              
+
 //               <button
 //                 onClick={nextSlide}
 //                 className="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center"
@@ -526,7 +522,6 @@
 //         {/* Desktop View - Original Layout with Slider */}
 //         <div className="hidden lg:block relative mx-auto max-w-[1273px] h-[869px]">
 //           <div className="absolute top-11 left-[466px] w-[338px] h-[825px] rounded-[29px_29px_48px_48px] bg-[linear-gradient(180deg,#1E88E5_0%,#000000_100%)]" />
-          
 
 //           {/* Center Phone - Shows current slide */}
 //           <article className="absolute top-[206px] left-[calc(50.00%_-_157px)] w-[311px] h-[641px]">
@@ -575,7 +570,7 @@
 //           {smallPhones.map((phone, index) => {
 //             // Calculate which slide to show on each small phone
 //             const slideIndex = (currentSlide + index + 1) % totalSlides;
-            
+
 //             return (
 //               <article
 //                 key={index}
@@ -640,7 +635,7 @@
 //             >
 //               <span className="text-white text-sm">‹</span>
 //             </button>
-            
+
 //             <div className="flex space-x-2">
 //               {slideImages.map((_, index) => (
 //                 <button
@@ -652,7 +647,7 @@
 //                 />
 //               ))}
 //             </div>
-            
+
 //             <button
 //               onClick={nextSlide}
 //               className="w-8 h-8 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center"
@@ -675,41 +670,41 @@
 
 // export default AppBuiltSection
 
-import React, { useState, useEffect } from 'react'
-import { Button } from "../components/ui/Button";
+import React, { useState, useEffect } from 'react';
+import { Button } from '../components/ui/Button';
 import Image from 'next/image';
 
 const features = [
-  "Advanced matching algorithms",
-  "Real-time messaging & video calls",
-  "Secure payment integration",
+  'Advanced matching algorithms',
+  'Real-time messaging & video calls',
+  'Secure payment integration',
 ];
 
 // Different images for each slide
 const slideImages = [
-  "/immg.png",
-  "/immg.png", 
-  "/immg.png",
-  "/immg.png",
-  "/immg.png"
+  '/immg.png',
+  '/immg.png',
+  '/immg.png',
+  '/immg.png',
+  '/immg.png',
 ];
 
 // Different titles for each slide
 const slideTitles = [
-  "DATING APP",
-  "FITNESS APP",
-  "ECOMMERCE APP",
-  "SOCIAL APP",
-  "EDUCATION APP"
+  'DATING APP',
+  'FITNESS APP',
+  'ECOMMERCE APP',
+  'SOCIAL APP',
+  'EDUCATION APP',
 ];
 
 // Phone positions array (for desktop only)
 const phonePositions = [
-  { class: "top-[296px] -left-0.5 rotate-[-10.08deg]" },
-  { class: "top-[253px] left-[233px] rotate-[-5.08deg]" },
-  { class: "top-[206px] left-[calc(50.00%_-_157px)]" }, // Center
-  { class: "top-[272px] left-[825px] rotate-[5.08deg]" },
-  { class: "top-[326px] left-[1056px] rotate-[10.08deg]" }
+  { class: 'top-[296px] -left-0.5 rotate-[-10.08deg]' },
+  { class: 'top-[253px] left-[233px] rotate-[-5.08deg]' },
+  { class: 'top-[206px] left-[calc(50.00%_-_157px)]' }, // Center
+  { class: 'top-[272px] left-[825px] rotate-[5.08deg]' },
+  { class: 'top-[326px] left-[1056px] rotate-[10.08deg]' },
 ];
 
 const AppBuiltSection = () => {
@@ -749,70 +744,70 @@ const AppBuiltSection = () => {
   // }, [currentSlide, isAnimating]);
 
   useEffect(() => {
-  if (isHovered) return; // pause while hovered
-  const interval = setInterval(() => {
-    nextSlide();
-  }, 3000);
+    if (isHovered) return; // pause while hovered
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000);
 
-  return () => clearInterval(interval);
-}, [currentSlide, isAnimating, isHovered]);
+    return () => clearInterval(interval);
+  }, [currentSlide, isAnimating, isHovered]);
 
   // Calculate which slide should be in each position
   const getVisibleSlides = () => {
     const slides = [];
-    
+
     for (let i = -2; i <= 2; i++) {
       let slideIndex = currentSlide + i;
-      
+
       // Handle wrap-around for slide indices
       if (slideIndex < 0) slideIndex = totalSlides + slideIndex;
       if (slideIndex >= totalSlides) slideIndex = slideIndex - totalSlides;
-      
+
       slides.push({
         slideIndex,
         positionIndex: i + 2, // Convert from -2,-1,0,1,2 to 0,1,2,3,4
-        isCenter: i === 0
+        isCenter: i === 0,
       });
     }
-    
+
     return slides;
   };
 
   const visibleSlides = getVisibleSlides();
 
   return (
-    <div className="overflow-x-hidden py-6">
+    <div className='overflow-x-hidden py-2'>
       {/* Hero Section - UNCHANGED */}
-      <section className="relative w-full ">
-        <div className="relative w-full flex flex-col lg:flex-row items-center justify-center gap-4 mt-10 px-4">
-          <h2 className="bg-[linear-gradient(0deg,rgba(102,102,102,1)_0%,rgba(255,255,255,1)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] font-semibold text-transparent text-4xl md:text-6xl lg:text-[80px] tracking-[-1.60px] leading-tight text-center lg:text-left">
+      <section className='relative w-full '>
+        <div className='relative w-full flex flex-col lg:flex-row items-center justify-center gap-4 mt-10 px-4'>
+          <h2 className='bg-[linear-gradient(0deg,rgba(102,102,102,1)_0%,rgba(255,255,255,1)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] font-semibold text-transparent text-4xl md:text-6xl lg:text-[80px] tracking-[-1.60px] leading-tight text-center lg:text-left'>
             Apps Built for
           </h2>
-          <h2 className="bg-[linear-gradient(180deg,rgba(255,255,255,1)_0%,rgba(0,136,255,1)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] font-semibold text-transparent text-4xl md:text-6xl lg:text-[80px] tracking-[-1.60px] leading-tight text-center lg:text-left">
+          <h2 className='bg-[linear-gradient(180deg,rgba(255,255,255,1)_0%,rgba(0,136,255,1)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] font-semibold text-transparent text-4xl md:text-6xl lg:text-[80px] tracking-[-1.60px] leading-tight text-center lg:text-left'>
             Every Industry
           </h2>
         </div>
       </section>
 
       {/* Main Content Section */}
-      <section className="relative w-full py-10 lg:py-20 px-4 lg:px-0">
+      <section className='relative w-full py-10 lg:py-20 px-4 lg:px-0'>
         {/* Left side gradient */}
         <div
-          className="absolute -left-52 sm:-left-72 md:-left-96 w-[2186px] h-[968px] rounded-[1093px/484px] blur-[124px] 
-                     bg-[linear-gradient(212deg,rgba(1,114,202,0.34)_0%,rgba(0,0,0,0.34)_100%)]"
+          className='absolute -left-52 sm:-left-72 md:-left-96 w-[2186px] h-[968px] rounded-[1093px/484px] blur-[124px] 
+                     bg-[linear-gradient(212deg,rgba(1,114,202,0.34)_0%,rgba(0,0,0,0.34)_100%)]'
         />
 
         {/* Right side gradient */}
         <div
-          className="absolute -right-52 sm:-right-72 md:-right-96 w-[2186px] h-[968px] rounded-[1093px/484px] rotate-180 blur-[124px] 
-                     bg-[linear-gradient(212deg,rgba(1,114,202,0.34)_0%,rgba(0,0,0,0.34)_100%)]"
+          className='absolute -right-52 sm:-right-72 md:-right-96 w-[2186px] h-[968px] rounded-[1093px/484px] rotate-180 blur-[124px] 
+                     bg-[linear-gradient(212deg,rgba(1,114,202,0.34)_0%,rgba(0,0,0,0.34)_100%)]'
         />
 
         {/* Mobile View - Horizontal Slider */}
-        <div className="block lg:hidden">
-          <div className="relative overflow-hidden">
+        <div className='block lg:hidden'>
+          <div className='relative overflow-hidden'>
             {/* Main Phone Slider */}
-            <div className="relative h-[800px]">
+            <div className='relative h-[800px]'>
               {slideImages.map((image, index) => (
                 <div
                   key={index}
@@ -824,37 +819,37 @@ const AppBuiltSection = () => {
                       : 'opacity-0 translate-x-full'
                   }`}
                 >
-                  <div className="relative mx-auto max-w-md mb-12">
-                    <div className="relative w-[311px] h-[641px] mx-auto">
-                      <div className="absolute top-0 left-0 w-[311px] h-[641px] bg-[#3b3c40] rounded-[51.73px] overflow-hidden">
-                        <div className="w-[311px] h-[641px] rounded-[51.73px] border-[2.28px] border-solid border-black blur-[1.52px] absolute top-0 left-0" />
-                        <div className="w-[311px] h-[641px] rounded-[51.73px] border-[0.76px] border-solid border-[#1f2321] blur-[0.76px] absolute top-0 left-0" />
-                        <div className="absolute top-1 left-1 w-[304px] h-[633px] rounded-[47.93px] border-[0.76px] border-solid border-[#212225] blur-[0.76px]" />
-                        <div className="absolute top-1 left-1 w-[303px] h-[632px] rounded-[47.17px] border-[0.3px] border-solid border-[#1d1f22]" />
+                  <div className='relative mx-auto max-w-md mb-12'>
+                    <div className='relative w-[311px] h-[641px] mx-auto'>
+                      <div className='absolute top-0 left-0 w-[311px] h-[641px] bg-[#3b3c40] rounded-[51.73px] overflow-hidden'>
+                        <div className='w-[311px] h-[641px] rounded-[51.73px] border-[2.28px] border-solid border-black blur-[1.52px] absolute top-0 left-0' />
+                        <div className='w-[311px] h-[641px] rounded-[51.73px] border-[0.76px] border-solid border-[#1f2321] blur-[0.76px] absolute top-0 left-0' />
+                        <div className='absolute top-1 left-1 w-[304px] h-[633px] rounded-[47.93px] border-[0.76px] border-solid border-[#212225] blur-[0.76px]' />
+                        <div className='absolute top-1 left-1 w-[303px] h-[632px] rounded-[47.17px] border-[0.3px] border-solid border-[#1d1f22]' />
                       </div>
 
-                      <div className="absolute top-[5px] left-[5px] w-[302px] h-[631px] bg-[#000100] rounded-[47.17px]" />
+                      <div className='absolute top-[5px] left-[5px] w-[302px] h-[631px] bg-[#000100] rounded-[47.17px]' />
 
-                      <div className="absolute top-3.5 left-3.5 w-[281px] h-[612px] rounded-[38.04px] overflow-hidden">
+                      <div className='absolute top-3.5 left-3.5 w-[281px] h-[612px] rounded-[38.04px] overflow-hidden'>
                         <Image
                           src={image}
                           alt={`${slideTitles[index]} Interface`}
                           width={281}
                           height={612}
-                          className="w-full h-full object-cover"
+                          className='w-full h-full object-cover'
                         />
                       </div>
                     </div>
 
-                    <div className="mt-6 text-center">
-                      <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                    <div className='mt-6 text-center'>
+                      <h3 className='text-2xl md:text-3xl font-bold text-white mb-4'>
                         {slideTitles[index]}
                       </h3>
-                      <ul className="space-y-2">
+                      <ul className='space-y-2'>
                         {features.map((feature, featureIndex) => (
                           <li
                             key={featureIndex}
-                            className="text-white text-sm md:text-base text-center"
+                            className='text-white text-sm md:text-base text-center'
                           >
                             {feature}
                           </li>
@@ -898,20 +893,22 @@ const AppBuiltSection = () => {
         </div>
 
         {/* Desktop View - Horizontal Slider */}
-        <div className="hidden lg:block relative mx-auto max-w-[1273px] h-[869px]">
-          <div className="absolute top-11 left-[466px] w-[338px] h-[825px] rounded-[29px_29px_48px_48px] bg-[linear-gradient(180deg,#1E88E5_0%,#000000_100%)]" />
-          
+        <div className='hidden lg:block relative mx-auto max-w-[1273px] h-[869px]'>
+          <div className='absolute top-11 left-[466px] w-[338px] h-[825px] rounded-[29px_29px_48px_48px] bg-[linear-gradient(180deg,#1E88E5_0%,#000000_100%)]' />
+
           {/* All 5 phones in a row - only one is fully visible at center */}
           {visibleSlides.map((slide) => (
             <div
-            onMouseEnter={() => setIsHovered(true)}  // PAUSE on hover
-    onMouseLeave={() => setIsHovered(false)} // RESUME on leave
-      onTouchStart={() => setIsHovered(true)}
-    onTouchEnd={() => setIsHovered(false)}
+              onMouseEnter={() => setIsHovered(true)} // PAUSE on hover
+              onMouseLeave={() => setIsHovered(false)} // RESUME on leave
+              onTouchStart={() => setIsHovered(true)}
+              onTouchEnd={() => setIsHovered(false)}
               key={slide.slideIndex}
-              className={`absolute ${phonePositions[slide.positionIndex].class} transition-all duration-500 ${
-                slide.isCenter 
-                  ? 'opacity-100 scale-100 z-30' 
+              className={`absolute ${
+                phonePositions[slide.positionIndex].class
+              } transition-all duration-500 ${
+                slide.isCenter
+                  ? 'opacity-100 scale-100 z-30'
                   : 'opacity-70 scale-90 z-20'
               } ${slide.positionIndex < 2 ? 'translate-x-[-50px]' : ''} ${
                 slide.positionIndex > 2 ? 'translate-x-[50px]' : ''
@@ -920,41 +917,41 @@ const AppBuiltSection = () => {
               {slide.isCenter ? (
                 // Center Phone (Large)
                 <>
-                  <article className="w-[311px] h-[641px]">
-                    <div className="absolute top-0 left-0 w-[311px] h-[641px] bg-[#3b3c40] rounded-[51.73px] overflow-hidden">
-                      <div className="w-[311px] h-[641px] rounded-[51.73px] border-[2.28px] border-solid border-black blur-[1.52px] absolute top-0 left-0" />
-                      <div className="w-[311px] h-[641px] rounded-[51.73px] border-[0.76px] border-solid border-[#1f2321] blur-[0.76px] absolute top-0 left-0" />
-                      <div className="absolute top-1 left-1 w-[304px] h-[633px] rounded-[47.93px] border-[0.76px] border-solid border-[#212225] blur-[0.76px]" />
-                      <div className="absolute top-1 left-1 w-[303px] h-[632px] rounded-[47.17px] border-[0.3px] border-solid border-[#1d1f22]" />
+                  <article className='w-[311px] h-[641px]'>
+                    <div className='absolute top-0 left-0 w-[311px] h-[641px] bg-[#3b3c40] rounded-[51.73px] overflow-hidden'>
+                      <div className='w-[311px] h-[641px] rounded-[51.73px] border-[2.28px] border-solid border-black blur-[1.52px] absolute top-0 left-0' />
+                      <div className='w-[311px] h-[641px] rounded-[51.73px] border-[0.76px] border-solid border-[#1f2321] blur-[0.76px] absolute top-0 left-0' />
+                      <div className='absolute top-1 left-1 w-[304px] h-[633px] rounded-[47.93px] border-[0.76px] border-solid border-[#212225] blur-[0.76px]' />
+                      <div className='absolute top-1 left-1 w-[303px] h-[632px] rounded-[47.17px] border-[0.3px] border-solid border-[#1d1f22]' />
                     </div>
 
-                    <div className="absolute top-[5px] left-[5px] w-[302px] h-[631px] bg-[#000100] rounded-[47.17px]" />
+                    <div className='absolute top-[5px] left-[5px] w-[302px] h-[631px] bg-[#000100] rounded-[47.17px]' />
 
-                    <div className="absolute top-3.5 left-3.5 w-[281px] h-[612px] rounded-[38.04px] overflow-hidden">
+                    <div className='absolute top-3.5 left-3.5 w-[281px] h-[612px] rounded-[38.04px] overflow-hidden'>
                       <Image
                         src={slideImages[slide.slideIndex]}
                         alt={`${slideTitles[slide.slideIndex]} Interface`}
                         width={281}
                         height={612}
-                        className="w-full h-full object-cover"
+                        className='w-full h-full object-cover'
                       />
                     </div>
                   </article>
 
-                  <div className="absolute top-[-200px] left-0 w-full">
-                    <div className="h-[178px] text-[38.6px] tracking-[-0.77px] leading-[177.8px] absolute flex items-center justify-center font-bold text-white whitespace-nowrap w-full">
+                  <div className='absolute top-[-200px] left-0 w-full'>
+                    <div className='h-[178px] text-[38.6px] tracking-[-0.77px] leading-[177.8px] absolute flex items-center justify-center font-bold text-white whitespace-nowrap w-full'>
                       {slideTitles[slide.slideIndex]}
                     </div>
-                    
+
                     {features.map((feature, index) => (
                       <div
                         key={index}
                         className={`absolute ${
                           index === 0
-                            ? "top-[117px] left-0 w-full text-center"
+                            ? 'top-[117px] left-0 w-full text-center'
                             : index === 1
-                            ? "top-[138px] left-0 w-full text-center"
-                            : "top-[158px] left-0 w-full text-center"
+                            ? 'top-[138px] left-0 w-full text-center'
+                            : 'top-[158px] left-0 w-full text-center'
                         } text-[11.2px] text-center leading-[20.0px] font-normal text-white tracking-[0]`}
                       >
                         {feature}
@@ -964,11 +961,13 @@ const AppBuiltSection = () => {
                 </>
               ) : (
                 // Side Phones (Small)
-                <article className="w-[211px] h-[513px]">
-                  <div className="ml-[19.8px] w-[179.64px] h-[67.14px] relative mt-0">
+                <article className='w-[211px] h-[513px]'>
+                  <div className='ml-[19.8px] w-[179.64px] h-[67.14px] relative mt-0'>
                     <h3
                       className={`absolute ${
-                        slide.positionIndex === 0 || slide.positionIndex === 3 ? "top-px" : "top-0"
+                        slide.positionIndex === 0 || slide.positionIndex === 3
+                          ? 'top-px'
+                          : 'top-0'
                       } left-[30px] w-[111px] h-[29px] flex items-center justify-center font-bold text-white text-[19.2px] tracking-[-0.38px] leading-[88.4px] whitespace-nowrap`}
                     >
                       {slideTitles[slide.slideIndex]}
@@ -979,10 +978,10 @@ const AppBuiltSection = () => {
                         key={featureIndex}
                         className={`absolute ${
                           featureIndex === 0
-                            ? "top-8 left-[7px] w-[156px]"
+                            ? 'top-8 left-[7px] w-[156px]'
                             : featureIndex === 1
-                            ? "top-[43px] left-0 w-[172px]"
-                            : "top-[55px] left-4 w-[140px]"
+                            ? 'top-[43px] left-0 w-[172px]'
+                            : 'top-[55px] left-4 w-[140px]'
                         } font-normal text-white text-[6.3px] text-center tracking-[0] leading-[11.3px]`}
                       >
                         {feature}
@@ -990,23 +989,23 @@ const AppBuiltSection = () => {
                     ))}
                   </div>
 
-                  <div className="ml-0 h-[433.99px] w-[210.56px] self-center relative">
-                    <div className="absolute top-0 left-0 w-[211px] h-[434px] bg-[#3b3c40] rounded-[35.01px] overflow-hidden">
-                      <div className="absolute top-0 left-0 w-[211px] h-[434px] rounded-[35.01px] border-[1.54px] border-solid border-black blur-[1.03px]" />
-                      <div className="w-[211px] h-[434px] rounded-[35.01px] border-[0.51px] border-solid border-[#1f2321] blur-[0.51px] absolute top-0 left-0" />
-                      <div className="absolute top-[3px] left-[3px] w-[205px] h-[428px] rounded-[32.43px] border-[0.51px] border-solid border-[#212225] blur-[0.51px]" />
-                      <div className="absolute top-[3px] left-[3px] w-[205px] h-[428px] rounded-[31.92px] border-[0.21px] border-solid border-[#1d1f22]" />
+                  <div className='ml-0 h-[433.99px] w-[210.56px] self-center relative'>
+                    <div className='absolute top-0 left-0 w-[211px] h-[434px] bg-[#3b3c40] rounded-[35.01px] overflow-hidden'>
+                      <div className='absolute top-0 left-0 w-[211px] h-[434px] rounded-[35.01px] border-[1.54px] border-solid border-black blur-[1.03px]' />
+                      <div className='w-[211px] h-[434px] rounded-[35.01px] border-[0.51px] border-solid border-[#1f2321] blur-[0.51px] absolute top-0 left-0' />
+                      <div className='absolute top-[3px] left-[3px] w-[205px] h-[428px] rounded-[32.43px] border-[0.51px] border-solid border-[#212225] blur-[0.51px]' />
+                      <div className='absolute top-[3px] left-[3px] w-[205px] h-[428px] rounded-[31.92px] border-[0.21px] border-solid border-[#1d1f22]' />
                     </div>
 
-                    <div className="absolute top-[3px] left-[3px] w-[204px] h-[427px] bg-[#000100] rounded-[31.92px]" />
+                    <div className='absolute top-[3px] left-[3px] w-[204px] h-[427px] bg-[#000100] rounded-[31.92px]' />
 
-                    <div className="absolute top-2.5 left-2.5 w-[190px] h-[414px] rounded-[25.74px] overflow-hidden">
+                    <div className='absolute top-2.5 left-2.5 w-[190px] h-[414px] rounded-[25.74px] overflow-hidden'>
                       <Image
                         src={slideImages[slide.slideIndex]}
                         alt={`${slideTitles[slide.slideIndex]} Interface`}
                         width={190}
                         height={414}
-                        className="w-full h-full object-cover"
+                        className='w-full h-full object-cover'
                       />
                     </div>
                   </div>
@@ -1046,14 +1045,14 @@ const AppBuiltSection = () => {
         </div>
 
         {/* Button - UNCHANGED */}
-        <div className="w-full flex justify-center mt-10 lg:mt-20">
-          <Button className="w-[266px] h-[53px] bg-[#1e88e5] hover:bg-[#1976d2] !rounded-full font-medium text-white text-base tracking-[-0.32px]">
+        <div className='w-full flex justify-center mt-10 lg:mt-20'>
+          <Button className='w-[266px] h-[53px] bg-[#1e88e5] hover:bg-[#1976d2] !rounded-full font-medium text-white text-base tracking-[-0.32px]'>
             Talk To An Expert
           </Button>
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default AppBuiltSection
+export default AppBuiltSection;
